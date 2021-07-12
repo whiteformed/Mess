@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/ripple_rect_button"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileThumb"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:contentDescription="@string/profile_photo"
+        android:src="@drawable/account_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileHolder"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:contentDescription="@string/profile_photo"
+        android:src="@drawable/account_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/linearLayout"
+        app:layout_constraintStart_toEndOf="@id/imgProfileThumb"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtUsername"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/username"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFromYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/from_you"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgPhotoMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtUsername" />
+
+        <ImageView
+            android:id="@+id/imgPhotoMessage"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_image"
+            android:alpha="0.6"
+            android:tint="@color/textColor"
+            app:layout_constraintEnd_toStartOf="@id/txtLastMessage"
+            app:layout_constraintStart_toEndOf="@id/txtFromYou"
+            app:layout_constraintTop_toBottomOf="@id/txtUsername" />
+
+        <TextView
+            android:id="@+id/txtLastMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPhotoMessage"
+            app:layout_constraintTop_toBottomOf="@id/txtUsername" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:58"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtUnseen"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

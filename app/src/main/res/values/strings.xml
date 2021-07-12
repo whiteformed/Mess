@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name" translatable="false">Mess</string>
+    <string name="app_version" translatable="false">1.0</string>
+    <string name="dot_separator" translatable="false">•</string>
+
+    <string name="about">About</string>
+    <string name="back">Back</string>
+
+    <string name="create_new_account">Create new account</string>
+    <string name="register">Register</string>
+    <string name="login">Sign In</string>
+    <string name="logout">Sign Out</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!-- Account Access -->
+    <string name="cant_access_account">Can\'t access to your account?</string>
+    <string name="account_access">Account access</string>
+    <string name="forgot_my_password">I forgot my password.</string>
+    <string name="reset">Reset</string>
+    <string name="reset_description">You will receive an email to reset your password.</string>
+    <string name="not_received_verification">I didn\'t receive a verification email.</string>
+    <string name="verification_description">You will receive a new verification email.</string>
+    <string name="already_verified_error">Your email is already verified</string>
+    <string name="verification_sent">A new verification email has been sent</string>
+
+    <string name="network_error">Check your internet connection</string>
+    <string name="verification_error">Please verify your email address</string>
+
+    <string name="register_error">Invalid register parameters</string>
+    <string name="required_fields_error">All fields are required</string>
+    <string name="password_char_error">Password must be at least 6 characters</string>
+    <string name="invalid_email_error">This is not a valid email</string>
+    <string name="email_in_use_error">This email address is already in use by another account</string>
+
+    <string name="login_error">Invalid email or password</string>
+    <string name="user_not_found_error">No account found registered with this email</string>
+    <string name="invalid_password_error">Invalid password</string>
+
+    <string name="timeout_error">Request timed out</string>
+
+    <string name="register_info">Click here if you don\'t have an account.</string>
+
+    <!-- Info -->
+    <string name="register_success">Registration successful, a verification link has been sent to your email address</string>
+    <string name="password_reset_mail_sent">A password reset link has been sent to your email address</string>
+    <string name="login_success">Login successful</string>
+
+    <string name="loading">Loading…</string>
+
+    <string name="chats">Chats</string>
+    <string name="users">Users</string>
+
+    <string name="profile_photo">Profile photo</string>
+    <string name="send_photo">Send photo</string>
+    <string name="send">Send</string>
+    <string name="messages">Messages</string>
+    <string name="message">Message</string>
+    <string name="message_channel_description">Get direct messages from users</string>
+    <string name="message_hint">Type a message…</string>
+
+    <string name="status">Status</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="last_seen">Last seen</string>
+    <string name="delivered">Delivered ✔</string>
+    <string name="seen">Seen ✔✔</string>
+    <string name="from_you">You:</string>
+    <string name="yesterday">Yesterday</string>
+
+    <string name="search_users">Search users</string>
+    <string name="search">Search…</string>
+    <string name="no_match">No matches found.</string>
+
+    <string name="logout_message">Do you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="settings">Settings</string>
+    <string name="change_username">Change username</string>
+    <string name="change_username_hint">New username</string>
+    <string name="change_email">Change email</string>
+    <string name="change_email_hint">New email</string>
+    <string name="change_password">Change password</string>
+    <string name="change_password_success">Password changed successfully</string>
+    <string name="change_password_hint">New password</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="confirm_old_password">Confirm your old password</string>
+    <string name="confirm_password_error">Password confirmation failed</string>
+    <string name="change">Change</string>
+    <string name="remove">Remove</string>
+    <string name="remove_profile_photo_success">Profile photo removed successfully</string>
+    <string name="change_profile_photo_success">Profile photo changed successfully</string>
+
+    <string name="choose_image">Choose image</string>
+    <string name="image">Image</string>
+    <string name="photo">Photo</string>
+
+    <!-- Loading -->
+    <string name="logging_in">Logging in…</string>
+    <string name="logging_out">Logging out…</string>
+    <string name="registering">Registering user…</string>
+</resources>
