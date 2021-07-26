@@ -1,5 +1,6 @@
 package com.example.mess;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -307,6 +308,7 @@ public class ChatActivity extends LoggedBasicActivity {
                         imgProfileThumb.clearColorFilter();
                     }
 
+                    @SuppressLint("UseCompatLoadingForDrawables")
                     @Override
                     public void onError(Exception e) {
                         Log.e(TAG_PICASSO, e.getMessage(), e);
@@ -355,6 +357,7 @@ public class ChatActivity extends LoggedBasicActivity {
         }
     }
 
+    @SuppressWarnings("deprecation")
     public void onClickSendPhoto(View view) {
         if (loggedUser == null || progressBar.getVisibility() == View.VISIBLE) return;
 
@@ -436,6 +439,7 @@ public class ChatActivity extends LoggedBasicActivity {
         notificationRef.set(notificationMap);
     }
 
+    @SuppressWarnings("ConstantConditions")
     private void updateChat(String message) {
         DocumentReference chatRef = firestore.document(CHATS + '/' + chatId);
 
